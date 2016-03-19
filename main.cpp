@@ -8,9 +8,7 @@ void drawCharSquare(char **square, int n);
 int main(int argc, char **argv)
 {
 	int n = atoi(argv[1]);
-	
-	const int seed = atoi(argv[2]);
-	srand(seed);
+	srand(atoi(argv[2]));
 	
 	drawCharSquare(charSquare(n), n);	
 }
